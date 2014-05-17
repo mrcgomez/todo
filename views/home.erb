@@ -1,0 +1,7 @@
+<h1>Todos</h1>
+<ul>
+	<% @todos.each do |todo| %>
+	<li><%= todo['name'] %> - <a href='/delete?id=<%= todo['_id']%>'>Remove</a></li>
+	
+	<% end %>
+</ul>
